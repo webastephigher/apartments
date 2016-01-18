@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+.scoreboard {
+	font-weight:bold;
+	width:300px;
+	margin-left:100px;
+}
+td {
+	text-align:right;
+}
+</style>
+</head>
+
+<body>
+<div data-ng-app="" data-ng-init="
+pay1beacon=0;pay2beacon=0;
+car1beacon=0;car2beacon=0;
+cc1beacon=0;cc2beacon=0;cc3beacon=0;
+carinsbeacon=0;lifeinsbeacon=0;
+miscbeacon=0;
+charitybeacon=0;
+phonebeacon=0;
+netbeacon=0;">
+
+<table class="scoreboard">
+<tr>
+<td>Yearly Pay (1):</td>
+<td>$<input type="number" ng-model="pay1beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Yearly Pay (2):</td>
+<td>$<input type="number" ng-model="pay2beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Insurance:</td>
+<td>$<input type="number" ng-model="carinsbeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Life Insurance:</td>
+<td>$<input type="number" ng-model="lifeinsbeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Payment (1):</td>
+<td>$<input type="number" ng-model="car1beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Payment (2):</td>
+<td>$<input type="number" ng-model="car2beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (1):</td>
+<td>$<input type="number" ng-model="cc1beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (2):</td>
+<td>$<input type="number" ng-model="cc2beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (3):</td>
+<td>$<input type="number" ng-model="cc3beacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Phone:</td>
+<td>$<input type="number" ng-model="phonebeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Internet:</td>
+<td>$<input type="number" ng-model="netbeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Charity:</td>
+<td>$<input type="number" ng-model="charitybeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Miscellaneous:</td>
+<td>$<input type="number" ng-model="miscbeacon" style="width:60px; color:black;"></td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>----------------</td>
+</tr>
+<tr><td>Money Left for Rent</td>
+<td>$
+{{pay1beacon/13*0.64 + pay2beacon/13*0.64 - car1beacon - car2beacon - cc1beacon - cc2beacon - cc3beacon - phonebeacon - netbeacon - charitybeacon - miscbeacon | number:2}}</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

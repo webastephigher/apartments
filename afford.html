@@ -1,0 +1,114 @@
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.pay1 = 0;
+    $scope.pay2 = 0;
+    $scope.carins = 0;
+    $scope.lifeins = 0;
+    $scope.car1 = 0;
+    $scope.car2 = 0;
+    $scope.cc1 = 0;
+    $scope.cc2 = 0;
+    $scope.cc3 = 0;
+    $scope.charity = 0;
+    $scope.phone = 0;
+    $scope.savings = 0;
+    $scope.net = 0;
+});
+</script> 
+
+<div data-ng-app="" data-ng-init="
+pay1=0;pay2=0;
+car1=0;car2=0;
+cc1=0;cc2=0;cc3=0;
+carins=0;lifeins=0;
+misc=0;util=0;
+charity=0;cable=0;
+phone=0;
+savings=0;
+net=0;
+">
+<table class="calculator">
+<tr>
+<td id="p1id">Yearly Pay (1):</td>
+<td>$<input type="number" id="pay1id" ng-model="pay1" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Yearly Pay (2):</td>
+<td>$<input type="number" ng-model="pay2" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Insurance:</td>
+<td>$<input type="number" ng-model="carins" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Life Insurance:</td>
+<td>$<input type="number" ng-model="lifeins" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Payment (1):</td>
+<td>$<input type="number" ng-model="car1" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Payment (2):</td>
+<td>$<input type="number" ng-model="car2" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (1):</td>
+<td>$<input type="number" ng-model="cc1" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (2):</td>
+<td>$<input type="number" ng-model="cc2" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Card (3):</td>
+<td>$<input type="number" ng-model="cc3" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Phone:</td>
+<td>$<input type="number" ng-model="phone" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Utilities:</td>
+<td>$<input type="number" ng-model="util" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Internet:</td>
+<td>$<input type="number" ng-model="net" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Cable:</td>
+<td>$<input type="number" ng-model="cable" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Charity:</td>
+<td>$<input type="number" ng-model="charity" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Miscellaneous:</td>
+<td>$<input type="number" ng-model="misc" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Savings:</td>
+<td>$<input type="number" ng-model="savings" style="width:60px; color:black;"></td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>----------------</td>
+</tr>
+<tr><td>Money Left for Rent<br />
+<button ng-click="
+pay1=0;pay2=0;
+car1=0;car2=0;
+cc1=0;cc2=0;cc3=0;
+carins=0;lifeins=0;
+misc=0;util=0;
+charity=0;cable=0;
+phone=0;
+savings=0;
+net=0;">Reset</button></td>
+<td>$
+{{pay1/13*0.64 + pay2/13*0.64 - car1 - car2 - cc1 - cc2 - cc3 - phone - net - charity - misc - util - cable - savings | number:2}}</td>
+</tr>
+</table>
+</div>

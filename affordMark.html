@@ -1,0 +1,73 @@
+
+<div data-ng-app="" data-ng-init="
+pay1=0;
+lifeins=42;
+carins=200;
+hnc=22;
+lekisha=1000;
+utils=0;
+phone=276;
+car=565;
+park=150;
+charity=200;
+cl=380;
+misc=0;">
+
+<table class="calculator">
+<tr>
+<td>Yearly Pay:</td>
+<td>$<input type="number" ng-model="pay1" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Life Insurance:</td>
+<td>$<input type="number" ng-model="lifeins" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Insurance:</td>
+<td>$<input type="number" ng-model="carins" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Parking:</td>
+<td>$<input type="number" ng-model="park" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Utilities:</td>
+<td>$<input type="number" ng-model="utils" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>HULU-Netflix-CBS:</td>
+<td>$<input type="number" ng-model="hnc" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Le Kisha:</td>
+<td>$<input type="number" ng-model="lekisha" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Car Payment:</td>
+<td>$<input type="number" ng-model="car" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Credit Line:</td>
+<td>$<input type="number" ng-model="cl" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Phone:</td>
+<td>$<input type="number" ng-model="phone" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Charity:</td>
+<td>$<input type="number" ng-model="charity" style="width:60px; color:black;"></td>
+</tr>
+<tr>
+<td>Miscellaneous:</td>
+<td>$<input type="number" ng-model="misc" style="width:60px; color:black;"></td>
+</tr>
+<tr><td>&nbsp;</td>
+<td>----------------</td>
+</tr>
+<tr><td>Money Left for Rent</td>
+<td>$
+{{pay1/13*0.64 - lifeins - carins - park - utils - lekisha - hnc - phone - charity - cl - car - misc | number:2}}</td>
+</tr>
+</table>
+</div>
