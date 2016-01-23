@@ -18,7 +18,9 @@
      <script>
         $(function(){
             $("#lyric").load("lyric/apartment_lyric.html");
-            $("#ajax").load("ajax.html");
+            $("#beacon").load("beacon/apartment_beacon.php");
+            $("#sullivan").load("sullivan/apartment_sullivan.php");
+            $("s2401penn").load("2401penn/apartment_2401penn.php");
     });
     </script>
 </head>
@@ -33,19 +35,19 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="bs-example">
-                    <?php include 'beacon/apartment_beacon.php'; ?>
+                    <div id="beacon"></div>
                 </div>
             </div>
             <div class="clearfix visible-sm-block"></div>
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="bs-example">
-                    <?php include 'sullivan/apartment_sullivan.php'; ?>
+                    <div id="sullivan"></div>
                 </div>
             </div>
             <div class="clearfix visible-md-block"></div>
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="bs-example">
-                    <?php include '2401penn/apartment_2401penn.php'; ?>
+                    <div id="2401penn"></div>
                 </div>
             </div>
             <div class="clearfix visible-sm-block"></div>
